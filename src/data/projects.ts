@@ -177,15 +177,32 @@ export const projects: Project[] = [
     teacherNote: "This project was the most complex I've facilitated — and the most rewarding. Students operated as real design teams, navigating disagreements, deadlines, and ambiguity just like professionals."
   },
 
-  // ── ART & DIGITAL MEDIA (15 total: 5 Elementary, 5 Middle, 5 High School) ──
-  // Elementary (5)
+  // ── ART & DIGITAL MEDIA ──
+  // Elementary (15 blank)
+  { id: "elem-dm-1", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-2", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-3", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-4", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-5", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-6", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-7", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-8", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-9", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-10", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-11", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-12", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-13", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-14", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "elem-dm-15", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+
+  // Middle School (was Elementary + existing Middle School = 15 total)
   {
     id: "stop-motion-stories",
     title: "Stories in Motion",
     thumbnail: "/MS Art & Media_Student_Work_Sample_2.jpg",
     shortIntro: "Students produced stop-motion animations exploring environmental themes.",
     overview: "",
-    level: "Elementary",
+    level: "Middle School",
     subject: "Interdisciplinary",
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
@@ -199,7 +216,7 @@ export const projects: Project[] = [
     thumbnail: "/MS Art & Media_Paper Collage.png",
     shortIntro: "Students created imaginative creatures using mixed-media collage techniques and digital editing.",
     overview: "",
-    level: "Elementary",
+    level: "Middle School",
     subject: "Art",
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
@@ -211,7 +228,7 @@ export const projects: Project[] = [
     thumbnail: "/MS Art & Media_Mixed Media.png",
     shortIntro: "Students authored and illustrated interactive digital storybooks.",
     overview: "",
-    level: "Elementary",
+    level: "Middle School",
     subject: "Art",
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
@@ -223,7 +240,7 @@ export const projects: Project[] = [
     thumbnail: "/MS Art & Media_Wire Sculpture.png",
     shortIntro: "Students created self-portraits using grid-based pixel art techniques.",
     overview: "",
-    level: "Elementary",
+    level: "Middle School",
     subject: "Art",
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
@@ -235,13 +252,12 @@ export const projects: Project[] = [
     thumbnail: "/MS Art & Media_Student_Work_Sample_7.png",
     shortIntro: "Students composed digital soundscapes inspired by natural environments.",
     overview: "",
-    level: "Elementary",
+    level: "Middle School",
     subject: "Interdisciplinary",
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
     images: ["/MS Art & Media_Student_Work_Sample_7.png"],
   },
-  // Middle School (5)
   {
     id: "generative-art",
     title: "Paper Collage",
@@ -303,7 +319,6 @@ export const projects: Project[] = [
     themeLabel: "Art & Digital Media",
     images: ["/MS Art & Media_Student_Work_Sample_9.JPG"],
   },
-  // More Middle School
   {
     id: "documentary-filmmaking",
     title: "Neighborhood Documentaries",
@@ -316,54 +331,27 @@ export const projects: Project[] = [
     themeLabel: "Art & Digital Media",
     images: ["/MS Art & Media_Student_Work_Sample_9-2.jpg"],
   },
-  {
-    id: "interactive-installations",
-    title: "Interactive Digital Installations",
-    thumbnail: "",
-    shortIntro: "Students built sensor-driven interactive art installations for public spaces.",
-    overview: "",
-    level: "Middle School",
-    subject: "Art",
-    theme: "digital-media",
-    themeLabel: "Art & Digital Media",
-    images: [],
-  },
-  {
-    id: "brand-identity-studio",
-    title: "Brand Identity Studio",
-    thumbnail: "",
-    shortIntro: "Students developed complete brand identity systems for fictional social enterprises.",
-    overview: "",
-    level: "Middle School",
-    subject: "Art",
-    theme: "digital-media",
-    themeLabel: "Art & Digital Media",
-    images: [],
-  },
-  {
-    id: "data-viz-art",
-    title: "Data as Art",
-    thumbnail: "",
-    shortIntro: "Students transformed real-world data sets into compelling visual art pieces.",
-    overview: "",
-    level: "Middle School",
-    subject: "Interdisciplinary",
-    theme: "digital-media",
-    themeLabel: "Art & Digital Media",
-    images: [],
-  },
-  {
-    id: "experimental-photography",
-    title: "Experimental Photography",
-    thumbnail: "",
-    shortIntro: "Students explored alternative photography techniques including cyanotype and light painting.",
-    overview: "",
-    level: "Middle School",
-    subject: "Art",
-    theme: "digital-media",
-    themeLabel: "Art & Digital Media",
-    images: [],
-  },
+  { id: "ms-dm-12", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Middle School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "ms-dm-13", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Middle School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "ms-dm-14", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Middle School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "ms-dm-15", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Middle School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+
+  // High School (15 blank)
+  { id: "hs-dm-1", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-2", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-3", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-4", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-5", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-6", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-7", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-8", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-9", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-10", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-11", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-12", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-13", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-14", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
+  { id: "hs-dm-15", title: "", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
 ];
 
 export const themes = [
@@ -373,5 +361,5 @@ export const themes = [
   { id: 'digital-media' as const, label: 'Art & Digital Media' },
 ] as const;
 
-export const levels = ['Elementary', 'Middle School'] as const;
+export const levels = ['Elementary', 'Middle School', 'High School'] as const;
 export const subjects = ['STEAM', 'Design', 'Engineering', 'Art', 'Interdisciplinary', 'Community & Urban Design', 'Environmental & Science', 'Environmental & Science '] as const;
