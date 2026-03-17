@@ -43,6 +43,7 @@ export const projects: Project[] = [
     theme: "community",
     themeLabel: "Community & Urban Design",
     images: ["/Valencia Gardens_Student_Work_Sample_3.PNG", "/Valencia Gardens_Student_Work_Sample_4.PNG", "/Valencia Gardens_Student_Work_Sample_5.PNG"],
+    videoUrls: ["https://player.vimeo.com/video/1174458881"],
     teacherNote: "The shake table transformed failure from something students feared into something they analyzed. 'It collapsed at 6.2' became a data point, not a defeat."
   },
   {
