@@ -99,7 +99,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </div>
       </footer>
 
-      <CVRequestModal open={cvModalOpen} onClose={() => setCvModalOpen(false)} />
+      
     </div>
   );
 };
