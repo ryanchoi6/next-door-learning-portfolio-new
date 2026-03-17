@@ -44,7 +44,7 @@ const Projects = () => {
             Student Work
           </h1>
           <p className="text-muted-foreground text-sm md:text-base max-w-2xl leading-relaxed font-body">
-            A curated collection of student projects spanning elementary through high school—each reflecting interdisciplinary thinking, creative rigor, and meaningful engagement with the world.       
+            A curated collection of student projects spanning elementary through middle school—each reflecting interdisciplinary thinking, creative rigor, and meaningful engagement with the world.       
           </p>
         </motion.div>
       </section>
