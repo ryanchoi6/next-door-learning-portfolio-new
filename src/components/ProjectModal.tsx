@@ -143,23 +143,26 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                       </motion.div>
                     )}
 
-                    {activeTab === "video" && project.videoUrl && (
+                    {activeTab === "video" && project.videoUrls && project.videoUrls.length > 0 && (
                       <motion.div
                         key="video"
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.2 }}
+                        className="flex flex-col gap-4"
                       >
-                        <div className="aspect-video rounded-xl overflow-hidden bg-secondary">
-                          <iframe
-                            src={project.videoUrl}
-                            className="w-full h-full"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            title={`${project.title} video`}
-                          />
-                        </div>
+                        {project.videoUrls.map((url, i) => (
+                          <div key={i} className="aspect-video rounded-xl overflow-hidden bg-secondary">
+                            <iframe
+                              src={url}
+                              className="w-full h-full"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                              title={`${project.title} video ${i + 1}`}
+                            />
+                          </div>
+                        ))}
                       </motion.div>
                     )}
                   </AnimatePresence>

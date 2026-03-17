@@ -189,7 +189,7 @@ export const projects: Project[] = [
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
     images: [],
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoUrls: ["https://www.youtube.com/embed/dQw4w9WgXcQ"],
     teacherNote: "Stop-motion taught patience in a way no lecture could. Students learned that quality requires hundreds of small, intentional decisions."
   },
   {
