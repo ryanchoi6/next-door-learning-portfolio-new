@@ -15,6 +15,12 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   const [activeTab, setActiveTab] = useState<Tab>(defaultTab);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
+  useEffect(() => {
+    if (project) {
+      setActiveTab(project.theme === "digital-media" ? "video" : "gallery");
+    }
+  }, [project]);
+
   const isDigitalMedia = project?.theme === "digital-media";
 
   const tabs: { key: Tab; label: string; icon: JSX.Element; available: boolean }[] = [
