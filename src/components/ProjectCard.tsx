@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { GraduationCap } from "lucide-react";
 import type { Project } from "@/data/projects";
 
 interface ProjectCardProps {
@@ -15,6 +16,8 @@ const themeColor: Record<string, string> = {
 };
 
 const ProjectCard = ({ project, index, onClick }: ProjectCardProps) => {
+  const isDigitalMedia = project.theme === "digital-media";
+
   return (
     <motion.div
       layout
@@ -27,7 +30,7 @@ const ProjectCard = ({ project, index, onClick }: ProjectCardProps) => {
     >
       <div className="bg-card border border-border rounded-xl overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:scale-[1.02]">
         {/* Thumbnail */}
-        <div className="aspect-[4/3] bg-secondary relative overflow-hidden">
+        <div className={`${isDigitalMedia ? "aspect-square" : "aspect-[4/3]"} bg-secondary relative overflow-hidden`}>
           {project.thumbnail ? (
             <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover" />
           ) : (
@@ -37,27 +40,42 @@ const ProjectCard = ({ project, index, onClick }: ProjectCardProps) => {
               </div>
             </div>
           )}
+
+          {/* Overlay badges for digital media */}
+          {isDigitalMedia && (
+            <div className="absolute bottom-2 left-2 flex flex-wrap items-center gap-1.5">
+              <span className="flex items-center gap-1 text-[10px] font-medium text-foreground bg-background/90 backdrop-blur-sm border border-border px-2 py-0.5 rounded-full">
+                <GraduationCap size={12} className="text-primary" />
+                {project.level}
+              </span>
+              <span className="text-[10px] font-medium text-primary bg-primary/10 backdrop-blur-sm border border-primary/20 px-2 py-0.5 rounded-full">
+                {project.themeLabel}
+              </span>
+            </div>
+          )}
         </div>
 
-        {/* Content */}
-        <div className="p-4">
-          <h3 className="font-display text-base font-semibold text-foreground mb-1 leading-snug">
-            {project.title}
-          </h3>
-          <p className="text-sm text-muted-foreground leading-relaxed mb-3 line-clamp-2 font-body">
-            {project.shortIntro}
-          </p>
+        {/* Content - hidden for digital media */}
+        {!isDigitalMedia && (
+          <div className="p-4">
+            <h3 className="font-display text-base font-semibold text-foreground mb-1 leading-snug">
+              {project.title}
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-3 line-clamp-2 font-body">
+              {project.shortIntro}
+            </p>
 
-          {/* Metadata */}
-          <div className="flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
-            <span>{project.level}</span>
-            <span className="text-border">·</span>
-            <span>{project.subject}</span>
+            {/* Metadata */}
+            <div className="flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
+              <span>{project.level}</span>
+              <span className="text-border">·</span>
+              <span>{project.subject}</span>
+            </div>
+
+            {/* Accent bar */}
+            <div className={`h-1 w-12 rounded-full mt-3 ${themeColor[project.theme] || "bg-primary"}`} />
           </div>
-
-          {/* Accent bar */}
-          <div className={`h-1 w-12 rounded-full mt-3 ${themeColor[project.theme] || "bg-primary"}`} />
-        </div>
+        )}
       </div>
     </motion.div>
   );
