@@ -100,7 +100,7 @@ export const projects: Project[] = [
     thumbnail: "/Carnival_Pinball Machine.png",
     shortIntro: "Students designed flat-pack furniture for a tiny house to develop essential construction skills.",
     overview: "Middle school students studied Buckminster Fuller's geodesic principles and constructed scaled dome models using dowels and connectors. Teams analyzed how triangular geometry distributes loads evenly, comparing dome performance against traditional rectangular frames under compression testing.",
-    level: "Middle School",
+    level: "High School",
     subject: "Engineering & Structural",
     theme: "engineering",
     themeLabel: "Engineering & Structural",
