@@ -1,4 +1,5 @@
 import studentWorkSample4 from "@/assets/student-work-sample-4.jpg";
+import studentWorkSample2 from "@/assets/student-work-sample-2.jpg";
 
 export interface Project {
   id: string;
