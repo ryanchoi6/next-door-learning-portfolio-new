@@ -108,6 +108,46 @@ const Projects = () => {
 
       {/* Project Modal */}
       <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
+
+      {/* Digital Media Lightbox */}
+      <AnimatePresence>
+        {lightboxProject && (
+          <motion.div
+            className="fixed inset-0 z-[100] bg-foreground/90 backdrop-blur-md flex flex-col items-center justify-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setLightboxProject(null)}
+          >
+            <button
+              onClick={() => setLightboxProject(null)}
+              className="absolute top-4 right-4 z-[101] w-10 h-10 rounded-full bg-background/10 border border-background/20 flex items-center justify-center text-background hover:bg-background/20 transition-colors"
+            >
+              <X size={20} />
+            </button>
+
+            <motion.img
+              src={lightboxProject.thumbnail}
+              alt={lightboxProject.title}
+              className="max-w-[90vw] max-h-[80vh] object-contain rounded-lg"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.2 }}
+              onClick={(e) => e.stopPropagation()}
+            />
+
+            <motion.h2
+              className="mt-4 text-background font-display text-lg md:text-xl font-semibold"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+            >
+              {lightboxProject.title}
+            </motion.h2>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>);
 
 };
