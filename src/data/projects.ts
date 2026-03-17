@@ -12,7 +12,7 @@ export interface Project {
   theme: 'engineering' | 'environmental' | 'community' | 'digital-media';
   themeLabel: string;
   images: string[];
-  videoUrl?: string;
+  videoUrls?: string[];
   teacherNote?: string;
 }
 
@@ -29,6 +29,7 @@ export const projects: Project[] = [
     theme: "community",
     themeLabel: "Community & Urban Design",
     images: ["/MS Office Design_Student_Work_Sample_1.png", "/MS Office Design_Student_Work_Sample_3.jpg", "/MS Office Design_Student_Work_Sample_4.JPG", "/MS Office_Sample_5.png"],
+    videoUrls: ["https://player.vimeo.com/video/1174450985", "https://player.vimeo.com/video/1174450316"],
     teacherNote: "This project was designed to make abstract physics concepts tangible. By the third iteration, students were naturally using engineering vocabulary — tensile strength, compression, load distribution — in their peer critiques."
   },
   {
@@ -117,7 +118,7 @@ export const projects: Project[] = [
     theme: "environmental",
     themeLabel: "Environmental & Science",
     images: ["/BioDesign_Student_Work_Sample_1-2.JPG", "/BioDesign_Student_Work_Sample_10.JPG", "/BioDesign_Student_Work_Sample_2.JPG", "/BioDesign_Student_Work_Sample_3.JPG", "/BioDesign_Student_Work_Sample_5.JPG", "/BioDesign_Student_Work_Sample_9.JPG"],
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoUrls: ["https://www.youtube.com/embed/dQw4w9WgXcQ"],
     teacherNote: "The intersection of environmental urgency and hands-on engineering created genuine student investment. Several students continued maintaining their greenhouses months after the project ended."
   },
   {
@@ -188,7 +189,7 @@ export const projects: Project[] = [
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
     images: [],
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoUrls: ["https://www.youtube.com/embed/dQw4w9WgXcQ"],
     teacherNote: "Stop-motion taught patience in a way no lecture could. Students learned that quality requires hundreds of small, intentional decisions."
   },
   {
