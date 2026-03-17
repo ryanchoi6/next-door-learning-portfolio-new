@@ -5,7 +5,7 @@ export interface Project {
   shortIntro: string;
   overview: string;
   level: 'Elementary' | 'Middle School' | 'High School';
-  subject: 'STEAM' | 'Design' | 'Engineering' | 'Art' | 'Interdisciplinary' | 'Community & Urban Design';
+  subject: 'STEAM' | 'Design' | 'Engineering' | 'Art' | 'Interdisciplinary' | 'Community & Urban Design' | 'Environmental & Science' | 'Environmental & Science ';
   theme: 'engineering' | 'environmental' | 'community' | 'digital-media';
   themeLabel: string;
   images: string[];
@@ -29,12 +29,12 @@ export const projects: Project[] = [
   },
   {
     id: "solar-greenhouse",
-    title: "Solar-Powered Micro Greenhouse",
+    title: "Biodegradable Packaging as an Alternative to Plastic",
     thumbnail: "",
-    shortIntro: "High school students engineered functional micro greenhouses powered by solar energy systems.",
+    shortIntro: "Students collaborated with Kitava restaurant and created biodegradable mycelium packaging as alternatives to plastic. ",
     overview: "An interdisciplinary project combining environmental science, electrical engineering, and sustainable design. Students designed, built, and monitored solar-powered micro greenhouses equipped with automated watering systems and temperature sensors. The project culminated in a community presentation on food sustainability.",
     level: "Middle School",
-    subject: "Community & Urban Design",
+    subject: "Environmental & Science",
     theme: "environmental",
     themeLabel: "Environmental & Science",
     images: [],
@@ -82,12 +82,12 @@ export const projects: Project[] = [
   },
   {
     id: "water-filtration",
-    title: "Clean Water, By Design",
+    title: "Upcycling Coffee Grounds into Functional Design",
     thumbnail: "",
-    shortIntro: "Students designed and tested water filtration systems for real-world water quality challenges.",
+    shortIntro: "Students collected coffee grounds from the teachers’ lounge and turned them into an aesthetic and functional product.",
     overview: "An environmental engineering project where students investigated local water quality data, designed multi-stage filtration systems, and tested their effectiveness using classroom water testing kits. The project connected environmental science to social justice, as students researched communities worldwide without clean water access.",
     level: "Middle School",
-    subject: "STEAM",
+    subject: "Environmental & Science ",
     theme: "environmental",
     themeLabel: "Environmental & Science",
     images: [],
@@ -143,4 +143,4 @@ export const themes = [
 ] as const;
 
 export const levels = ['Elementary', 'Middle School', 'High School'] as const;
-export const subjects = ['STEAM', 'Design', 'Engineering', 'Art', 'Interdisciplinary', 'Community & Urban Design'] as const;
+export const subjects = ['STEAM', 'Design', 'Engineering', 'Art', 'Interdisciplinary', 'Community & Urban Design', 'Environmental & Science', 'Environmental & Science '] as const;
