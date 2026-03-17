@@ -12,7 +12,7 @@ export interface Project {
   theme: 'engineering' | 'environmental' | 'community' | 'digital-media';
   themeLabel: string;
   images: string[];
-  videoUrl?: string;
+  videoUrls?: string[];
   teacherNote?: string;
 }
 
