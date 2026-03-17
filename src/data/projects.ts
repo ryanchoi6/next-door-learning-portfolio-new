@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     id: "bridge-challenge",
     title: "Reimagining the Middle School Office",
-    thumbnail: "",
+    thumbnail: "/MS Office Design_Thumbnail.jpg",
     shortIntro: "Students redesigned the Middle School office to encourage greater engagement from the community. ",
     overview: "A 6-week engineering challenge where middle school students iterated through multiple prototypes of load-bearing bridges. Students applied mathematical modeling, material science principles, and collaborative design reviews to optimize their structures for maximum load capacity while minimizing material usage.",
     level: "Middle School",
@@ -29,13 +29,13 @@ export const projects: Project[] = [
     theme: "community",
     themeLabel: "Community & Urban Design",
     images: ["/MS Office Design_Student_Work_Sample_1.png", "/MS Office Design_Student_Work_Sample_3.jpg", "/MS Office Design_Student_Work_Sample_4.JPG", "/MS Office_Sample_5.png"],
-    videoUrls: ["https://player.vimeo.com/video/1174450985", "https://player.vimeo.com/video/1174450316"],
+    videoUrls: ["https://player.vimeo.com/video/1174450985", "https://player.vimeo.com/video/1174450316", "https://player.vimeo.com/video/1174460156"],
     teacherNote: "This project was designed to make abstract physics concepts tangible. By the third iteration, students were naturally using engineering vocabulary — tensile strength, compression, load distribution — in their peer critiques."
   },
   {
     id: "earthquake-structures",
     title: "Learning Through Play: Affordable Housing Playground",
-    thumbnail: "",
+    thumbnail: "/Valencia Gardens_Thumbnail.jpg",
     shortIntro: "Students designed a playground for an affordable housing community using 3D modeling and augmented reality.",
     overview: "A rigorous engineering design challenge where high school students researched, prototyped, and tested earthquake-resistant building designs. Using a classroom shake table, teams tested their structures against increasing magnitudes. The project integrated physics, materials science, and iterative design methodology.",
     level: "Middle School",
@@ -43,6 +43,7 @@ export const projects: Project[] = [
     theme: "community",
     themeLabel: "Community & Urban Design",
     images: ["/Valencia Gardens_Student_Work_Sample_3.PNG", "/Valencia Gardens_Student_Work_Sample_4.PNG", "/Valencia Gardens_Student_Work_Sample_5.PNG"],
+    videoUrls: ["https://player.vimeo.com/video/1174458881"],
     teacherNote: "The shake table transformed failure from something students feared into something they analyzed. 'It collapsed at 6.2' became a data point, not a defeat."
   },
   {
