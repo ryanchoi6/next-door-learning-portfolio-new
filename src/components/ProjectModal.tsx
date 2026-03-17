@@ -65,17 +65,31 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                 </button>
 
                 {/* Hero Image */}
-                <div className="aspect-[16/9] bg-secondary overflow-hidden">
-                  {project.thumbnail ? (
-                    <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover" />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary to-muted">
-                      <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
-                        <span className="font-display text-3xl font-bold text-primary/30">{project.title[0]}</span>
+                {isDigitalMedia ? (
+                  <div className="bg-secondary flex items-center justify-center">
+                    {project.thumbnail ? (
+                      <img src={project.thumbnail} alt={project.title} className="w-full h-auto object-contain" />
+                    ) : (
+                      <div className="aspect-[16/9] w-full flex items-center justify-center bg-gradient-to-br from-secondary to-muted">
+                        <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
+                          <span className="font-display text-3xl font-bold text-primary/30">{project.title[0]}</span>
+                        </div>
                       </div>
-                    </div>
-                  )}
-                </div>
+                    )}
+                  </div>
+                ) : (
+                  <div className="aspect-[16/9] bg-secondary overflow-hidden">
+                    {project.thumbnail ? (
+                      <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover" />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary to-muted">
+                        <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
+                          <span className="font-display text-3xl font-bold text-primary/30">{project.title[0]}</span>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
 
                 <div className="p-6 md:p-8">
                   {/* Title */}
@@ -94,10 +108,12 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                     </span>
                   </div>
 
-                  {/* Overview */}
-                  <p className="text-sm text-foreground leading-relaxed mb-6 font-body">
-                    {project.overview}
-                  </p>
+                  {/* Overview - hidden for digital media */}
+                  {!isDigitalMedia && (
+                    <p className="text-sm text-foreground leading-relaxed mb-6 font-body">
+                      {project.overview}
+                    </p>
+                  )}
 
                   {/* Tabs */}
                   <div className="flex items-center gap-2 mb-6">
