@@ -59,7 +59,7 @@ export const projects: Project[] = [
   {
     id: "tower-of-strength",
     title: "From Art to Sound: Functional Speaker Design",
-    thumbnail: "",
+    thumbnail: "/Speaker_Student_Work_Sample_12.JPG",
     shortIntro: "Students created functional speakers inspired by key art and design movements.",
     overview: "A materials-constrained challenge where middle school teams used only newspaper, tape, and string to construct towers. The engineering goal was maximizing height while maintaining structural integrity under a standardized load test. Students documented each iteration, analyzing failure modes and refining their approach.",
     level: "Middle School",
@@ -71,7 +71,7 @@ export const projects: Project[] = [
   {
     id: "wind-turbine-design",
     title: "Words and Light: A Social Typography Project",
-    thumbnail: "",
+    thumbnail: "/Lamp_Student_Work_Sample_6.png",
     shortIntro: "Students used words, imagery, and custom typography to create a lamp symbolizing hope and inspiring social change.",
     overview: "High school students explored aerodynamics and renewable energy by designing turbine blades from balsa wood and foam core. Using a classroom wind tunnel and voltage meters, teams tested blade pitch, curvature, and count to maximize electrical output from a small DC motor.",
     level: "Middle School",
@@ -138,7 +138,7 @@ export const projects: Project[] = [
   {
     id: "neighborhood-redesign",
     title: "Physics in Motion",
-    thumbnail: "",
+    thumbnail: "/Boat_Student_Work_Sample_8.png",
     shortIntro: "Students applied physics principles and teamwork to build cardboard boats.",
     overview: "Students conducted community interviews, created empathy maps, and identified design opportunities in their school neighborhood. They built scale models of redesigned spaces — including accessible playgrounds, community gardens, and safe walking paths — presenting their proposals to local community members.",
     level: "Middle School",
