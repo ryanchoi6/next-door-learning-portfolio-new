@@ -97,15 +97,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <p className="font-display text-lg font-semibold text-foreground">Learning by Designing, Innovating, Impacting</p>
               <p className="text-sm text-muted-foreground mt-1">11 years of interdisciplinary innovation in K–12 education</p>
             </div>
-            <div className="flex items-center gap-4">
-              <button
-                onClick={() => setCvModalOpen(true)}
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors border border-border rounded-full px-4 py-2 hover:border-primary/30"
-              >
-                <FileText size={14} />
-                Request CV
-              </button>
-            </div>
           </div>
         </div>
       </footer>
