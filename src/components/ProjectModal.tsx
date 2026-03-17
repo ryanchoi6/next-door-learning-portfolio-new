@@ -30,6 +30,41 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
   const closeLightbox = () => setLightboxIndex(null);
 
+  // For digital media, show a simple lightbox overlay instead of the full modal
+  if (isDigitalMedia) {
+    return (
+      <AnimatePresence>
+        {project && project.thumbnail && (
+          <motion.div
+            className="fixed inset-0 z-[100] bg-foreground/90 backdrop-blur-md flex items-center justify-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+          >
+            <button
+              onClick={onClose}
+              className="absolute top-4 right-4 z-[101] w-10 h-10 rounded-full bg-background/10 border border-background/20 flex items-center justify-center text-background hover:bg-background/20 transition-colors"
+            >
+              <X size={20} />
+            </button>
+
+            <motion.img
+              src={project.images[0] || project.thumbnail}
+              alt={project.title}
+              className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.2 }}
+              onClick={(e) => e.stopPropagation()}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    );
+  }
+
   return (
     <>
       <AnimatePresence>
@@ -65,31 +100,17 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                 </button>
 
                 {/* Hero Image */}
-                {isDigitalMedia ? (
-                  <div className="bg-secondary flex items-center justify-center">
-                    {project.thumbnail ? (
-                      <img src={project.thumbnail} alt={project.title} className="w-full h-auto object-contain" />
-                    ) : (
-                      <div className="aspect-[16/9] w-full flex items-center justify-center bg-gradient-to-br from-secondary to-muted">
-                        <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
-                          <span className="font-display text-3xl font-bold text-primary/30">{project.title[0]}</span>
-                        </div>
+                <div className="aspect-[16/9] bg-secondary overflow-hidden">
+                  {project.thumbnail ? (
+                    <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover" />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary to-muted">
+                      <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
+                        <span className="font-display text-3xl font-bold text-primary/30">{project.title[0]}</span>
                       </div>
-                    )}
-                  </div>
-                ) : (
-                  <div className="aspect-[16/9] bg-secondary overflow-hidden">
-                    {project.thumbnail ? (
-                      <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover" />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary to-muted">
-                        <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
-                          <span className="font-display text-3xl font-bold text-primary/30">{project.title[0]}</span>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )}
+                    </div>
+                  )}
+                </div>
 
                 <div className="p-6 md:p-8">
                   {/* Title */}
@@ -108,12 +129,10 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                     </span>
                   </div>
 
-                  {/* Overview - hidden for digital media */}
-                  {!isDigitalMedia && (
-                    <p className="text-sm text-foreground leading-relaxed mb-6 font-body">
-                      {project.overview}
-                    </p>
-                  )}
+                  {/* Overview */}
+                  <p className="text-sm text-foreground leading-relaxed mb-6 font-body">
+                    {project.overview}
+                  </p>
 
                   {/* Tabs */}
                   <div className="flex items-center gap-2 mb-6">
@@ -208,7 +227,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             exit={{ opacity: 0 }}
             onClick={closeLightbox}
           >
-            {/* Close */}
             <button
               onClick={closeLightbox}
               className="absolute top-4 right-4 z-[101] w-10 h-10 rounded-full bg-background/10 border border-background/20 flex items-center justify-center text-background hover:bg-background/20 transition-colors"
@@ -216,7 +234,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               <X size={20} />
             </button>
 
-            {/* Prev */}
             {lightboxIndex > 0 && (
               <button
                 onClick={(e) => { e.stopPropagation(); setLightboxIndex(lightboxIndex - 1); }}
@@ -226,7 +243,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               </button>
             )}
 
-            {/* Next */}
             {lightboxIndex < project.images.length - 1 && (
               <button
                 onClick={(e) => { e.stopPropagation(); setLightboxIndex(lightboxIndex + 1); }}
@@ -236,7 +252,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               </button>
             )}
 
-            {/* Image */}
             <motion.img
               key={lightboxIndex}
               src={project.images[lightboxIndex]}
@@ -249,7 +264,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               onClick={(e) => e.stopPropagation()}
             />
 
-            {/* Counter */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-background/70 text-sm font-medium">
               {lightboxIndex + 1} / {project.images.length}
             </div>
