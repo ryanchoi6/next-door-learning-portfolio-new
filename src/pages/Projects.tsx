@@ -24,6 +24,15 @@ const Projects = () => {
   const [activeTheme, setActiveTheme] = useState<string | null>(null);
   const [activeLevel, setActiveLevel] = useState<string | null>(null);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [lightboxProject, setLightboxProject] = useState<Project | null>(null);
+
+  const handleProjectClick = (project: Project) => {
+    if (project.theme === "digital-media") {
+      setLightboxProject(project);
+    } else {
+      setSelectedProject(project);
+    }
+  };
 
   const filteredProjects = useMemo(() => {
     return projects.filter((p) => {
