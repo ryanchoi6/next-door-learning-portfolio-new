@@ -54,7 +54,7 @@ export const projects: Project[] = [
     subject: "Community & Urban Design",
     theme: "community",
     themeLabel: "Community & Urban Design",
-    images: [],
+    images: ["/UrbanPlanning_Student_Work_Sample_5.JPG", "/UrbanPlanning_Student_Work_Sample_2.png", "/UrbanPlanning_Student_Work_Sample_1.png", "/UrbanPlanning_Student_Work_Sample_3.png", "/UrbanPlanning_Student_Work_Sample_6.png"],
   },
   {
     id: "tower-of-strength",
