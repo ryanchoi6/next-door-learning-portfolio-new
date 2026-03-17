@@ -14,8 +14,10 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   const [activeTab, setActiveTab] = useState<Tab>("gallery");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
+  const isDigitalMedia = project?.theme === "digital-media";
+
   const tabs: { key: Tab; label: string; icon: JSX.Element; available: boolean }[] = [
-    { key: "gallery", label: "Gallery", icon: <Image size={16} />, available: true },
+    { key: "gallery", label: "Gallery", icon: <Image size={16} />, available: !isDigitalMedia },
     { key: "video", label: "Video", icon: <Video size={16} />, available: !!(project?.videoUrls && project.videoUrls.length > 0) },
   ];
 
