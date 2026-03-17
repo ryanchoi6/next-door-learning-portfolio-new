@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
-import { GraduationCap, School, Building2 } from "lucide-react";
+import { GraduationCap, School, Building2, X } from "lucide-react";
 import ThemeFilter from "@/components/ThemeFilter";
 import ProjectCard from "@/components/ProjectCard";
 import ProjectModal from "@/components/ProjectModal";
