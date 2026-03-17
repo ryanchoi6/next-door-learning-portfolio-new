@@ -59,7 +59,7 @@ export const projects: Project[] = [
   {
     id: "tower-of-strength",
     title: "From Art to Sound: Functional Speaker Design",
-    thumbnail: "",
+    thumbnail: "/Speaker_Student_Work_Sample_12.JPG",
     shortIntro: "Students created functional speakers inspired by key art and design movements.",
     overview: "A materials-constrained challenge where middle school teams used only newspaper, tape, and string to construct towers. The engineering goal was maximizing height while maintaining structural integrity under a standardized load test. Students documented each iteration, analyzing failure modes and refining their approach.",
     level: "Middle School",
