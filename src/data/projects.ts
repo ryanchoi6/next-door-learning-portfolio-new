@@ -361,5 +361,5 @@ export const themes = [
   { id: 'digital-media' as const, label: 'Art & Digital Media' },
 ] as const;
 
-export const levels = ['Elementary', 'Middle School'] as const;
+export const levels = ['Elementary', 'Middle School', 'High School'] as const;
 export const subjects = ['STEAM', 'Design', 'Engineering', 'Art', 'Interdisciplinary', 'Community & Urban Design', 'Environmental & Science', 'Environmental & Science '] as const;
