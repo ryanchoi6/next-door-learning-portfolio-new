@@ -78,7 +78,7 @@ export const projects: Project[] = [
     subject: "Engineering & Structural",
     theme: "engineering",
     themeLabel: "Engineering & Structural",
-    images: [],
+    images: ["/Lamp_Student_Work_Sample_18.jpg", "/Lamp_Student_Work_Sample_6.png", "/Lamp_Student_Work_Sample_7.png", "/Lamp_Student_Work_Sample_17.jpg", "/Lamp_Student_Work_Sample_2.jpg"],
   },
   {
     id: "paper-roller-coaster",
