@@ -11,7 +11,8 @@ interface ProjectModalProps {
 type Tab = "gallery" | "video";
 
 const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
-  const [activeTab, setActiveTab] = useState<Tab>("gallery");
+  const defaultTab: Tab = project?.theme === "digital-media" ? "video" : "gallery";
+  const [activeTab, setActiveTab] = useState<Tab>(defaultTab);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const isDigitalMedia = project?.theme === "digital-media";
