@@ -167,7 +167,7 @@ export const projects: Project[] = [
     thumbnail: "",
     shortIntro: "High school teams prototyped smart city solutions using sensors, data, and urban design principles.",
     overview: "A capstone interdisciplinary project where student teams envisioned and prototyped smart city infrastructure for 2045. Teams integrated Arduino sensors, 3D-printed architectural models, data visualization dashboards, and urban planning research. Projects addressed transportation, energy, public health, and community engagement.",
-    level: "High School",
+    level: "Middle School",
     subject: "Interdisciplinary",
     theme: "community",
     themeLabel: "Community & Urban Design",
