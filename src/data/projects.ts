@@ -244,7 +244,7 @@ export const projects: Project[] = [
   // Middle School (5)
   {
     id: "generative-art",
-    title: "Algorithmic Pattern Design",
+    title: "Paper Collage",
     thumbnail: "",
     shortIntro: "Students created digital art using algorithmic thinking and generative design tools.",
     overview: "Middle school students explored the intersection of mathematics and visual art by creating algorithmic patterns. Using block-based coding and vector design tools, they generated complex geometric compositions inspired by Islamic geometric art and contemporary generative design. Final works were printed as large-format posters for a school-wide exhibition.",
