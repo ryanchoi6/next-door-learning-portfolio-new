@@ -17,6 +17,7 @@ const fadeUp = {
 const levelIcons: Record<string, JSX.Element> = {
   Elementary: <GraduationCap size={16} />,
   "Middle School": <School size={16} />,
+  "High School": <Building2 size={16} />,
 };
 
 const Projects = () => {
@@ -32,7 +33,7 @@ const Projects = () => {
     });
   }, [activeTheme, activeLevel]);
 
-  const levels = ["Elementary", "Middle School"];
+  const levels = ["Elementary", "Middle School", "High School"];
 
   return (
     <div className="min-h-screen">
