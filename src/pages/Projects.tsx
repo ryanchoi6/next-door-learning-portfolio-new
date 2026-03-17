@@ -93,7 +93,7 @@ const Projects = () => {
               key={project.id}
               project={project}
               index={index}
-              onClick={() => setSelectedProject(project)} />
+              onClick={() => handleProjectClick(project)} />
 
             )}
           </AnimatePresence>
