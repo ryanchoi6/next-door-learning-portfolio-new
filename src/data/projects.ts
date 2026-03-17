@@ -145,7 +145,7 @@ export const projects: Project[] = [
     subject: "Engineering & Structural",
     theme: "engineering",
     themeLabel: "Engineering & Structural",
-    images: [],
+    images: ["/Boat_Student_Work_Sample_8.png", "/Boat_Student_Work_Sample_7.png", "/Boat_Student_Work_Sample_1.jpg", "/Boat_Student_Work_Sample_2.jpg", "/Boat_Student_Work_Sample_3.jpg", "/Boat_Student_Work_Sample_4.jpg", "/Boat_Student_Work_Sample_5.jpg"],
     teacherNote: "Watching 8-year-olds interview community elders about accessibility needs was a powerful reminder that design thinking isn't age-dependent — it's empathy-dependent."
   },
   {
