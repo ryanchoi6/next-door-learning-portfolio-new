@@ -301,14 +301,14 @@ export const projects: Project[] = [
     themeLabel: "Art & Digital Media",
     images: [],
   },
-  // High School (5)
+  // Middle School (10)
   {
     id: "documentary-filmmaking",
     title: "Neighborhood Documentaries",
     thumbnail: "",
     shortIntro: "Students directed short documentary films exploring their neighborhoods' hidden stories.",
     overview: "High school students produced 5-minute documentary films about overlooked aspects of their neighborhoods. They learned cinematography, interview techniques, narrative structure, and video editing. Final films were screened at a community film night, sparking dialogue between students and long-time residents.",
-    level: "High School",
+    level: "Middle School",
     subject: "Interdisciplinary",
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
@@ -320,7 +320,7 @@ export const projects: Project[] = [
     thumbnail: "",
     shortIntro: "Students built sensor-driven interactive art installations for public spaces.",
     overview: "Combining physical computing with digital art, high school students designed interactive installations that responded to viewer movement, sound, or touch. Using Arduino sensors and projection mapping, teams created immersive experiences that blurred the line between viewer and participant.",
-    level: "High School",
+    level: "Middle School",
     subject: "Art",
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
@@ -332,7 +332,7 @@ export const projects: Project[] = [
     thumbnail: "",
     shortIntro: "Students developed complete brand identity systems for fictional social enterprises.",
     overview: "High school students operated as design studios, creating comprehensive brand identities — logos, color systems, typography, packaging, and social media templates — for fictional social enterprises. The project taught design systems thinking, client communication, and professional presentation skills.",
-    level: "High School",
+    level: "Middle School",
     subject: "Art",
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
@@ -344,7 +344,7 @@ export const projects: Project[] = [
     thumbnail: "",
     shortIntro: "Students transformed real-world data sets into compelling visual art pieces.",
     overview: "Students collected data on topics they cared about — from screen time habits to local air quality — and transformed it into large-scale data visualization artworks. The project merged statistical literacy with visual design, producing pieces that communicated complex information through beauty and clarity.",
-    level: "High School",
+    level: "Middle School",
     subject: "Interdisciplinary",
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
@@ -356,7 +356,7 @@ export const projects: Project[] = [
     thumbnail: "",
     shortIntro: "Students explored alternative photography techniques including cyanotype and light painting.",
     overview: "High school students went beyond traditional photography to explore experimental techniques: cyanotype printing, long-exposure light painting, double exposures, and photomontage. The project emphasized process over product, encouraging risk-taking and happy accidents as valid artistic methods.",
-    level: "High School",
+    level: "Middle School",
     subject: "Art",
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
@@ -371,5 +371,5 @@ export const themes = [
   { id: 'digital-media' as const, label: 'Art & Digital Media' },
 ] as const;
 
-export const levels = ['Elementary', 'Middle School', 'High School'] as const;
+export const levels = ['Elementary', 'Middle School'] as const;
 export const subjects = ['STEAM', 'Design', 'Engineering', 'Art', 'Interdisciplinary', 'Community & Urban Design', 'Environmental & Science', 'Environmental & Science '] as const;
