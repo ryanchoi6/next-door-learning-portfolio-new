@@ -49,7 +49,7 @@ export const projects: Project[] = [
     title: "Addressing Urban Challenges in South Korea",
     thumbnail: "/UrbanPlanning_Student_Work_Sample_5.JPG",
     shortIntro: "Students analyzed urban planning challenges across South Korean cities and proposed solutions.",
-    overview: "Elementary students designed and constructed catapults from craft materials, testing launch angles and counterweight ratios to maximize projectile distance. The project connected hands-on building with foundational physics concepts like potential and kinetic energy.",
+    overview: "Students identified a range of urban planning issues across cities in South Korea and proposed solutions by considering neighbors, residents, the environment, and other key factors.",
     level: "Middle School",
     subject: "Community & Urban Design",
     theme: "community",
