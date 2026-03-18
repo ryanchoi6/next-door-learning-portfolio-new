@@ -237,11 +237,11 @@ export const projects: Project[] = [
 
   // ── ART & DIGITAL MEDIA ──
   // Elementary (15 blank)
-  { id: "elem-dm-1", title: "", thumbnail: "/Student Work Samples/ES 4_1.png", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/Student Work Samples/ES 4_1.png"] },
-  { id: "elem-dm-2", title: "", thumbnail: "/Student Work Samples/ES 4_2.png", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/Student Work Samples/ES 4_2.png"] },
-  { id: "elem-dm-3", title: "", thumbnail: "/Student Work Samples/ES 4_3.png", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/Student Work Samples/ES 4_3.png"] },
-  { id: "elem-dm-4", title: "", thumbnail: "/Student Work Samples/ES 4_4.jpg", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/Student Work Samples/ES 4_4.jpg"] },
-  { id: "elem-dm-5", title: "", thumbnail: "/Student Work Samples/ES 5_1.jpg", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/Student Work Samples/ES 5_1.jpg"] },
+  { id: "elem-dm-1", title: "", thumbnail: "/ES 4_1.png", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/ES 4_1.png"] },
+  { id: "elem-dm-2", title: "", thumbnail: "/ES 4_2.png", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/ES 4_2.png"] },
+  { id: "elem-dm-3", title: "", thumbnail: "/ES 4_3.png", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/ES 4_3.png"] },
+  { id: "elem-dm-4", title: "", thumbnail: "/ES 4_4.jpg", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/ES 4_4.jpg"] },
+  { id: "elem-dm-5", title: "", thumbnail: "/ES 5_1.jpg", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/ES 5_1.jpg"] },
   { id: "elem-dm-6", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
   { id: "elem-dm-7", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
   { id: "elem-dm-8", title: "", thumbnail: "", shortIntro: "", overview: "", level: "Elementary", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [] },
