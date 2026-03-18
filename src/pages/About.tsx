@@ -4,7 +4,7 @@ const fadeUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
-  transition: { duration: 0.6 },
+  transition: { duration: 0.6 }
 };
 
 const About = () => {
@@ -50,20 +50,20 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-3">The Skills That Matter</h3>
-              <div className="space-y-4">
-                {[
-                  { skill: "Creativity", desc: "The disciplined application of imagination to solve real problems." },
-                  { skill: "Critical Thinking", desc: "The ability to evaluate evidence, question assumptions, and revise thinking." },
-                  { skill: "Empathy", desc: "Understanding that design begins with other people. Every project starts with listening." },
-                  { skill: "Iteration", desc: "The confidence to treat a first draft as a first draft. Revision is the method." },
-                  { skill: "Communication", desc: "Making thinking visible through prototypes, presentations, and peer critiques." },
-                ].map(({ skill, desc }) => (
-                  <div key={skill} className="border-l-2 border-border pl-4 hover:border-primary/60 transition-colors">
-                    <h4 className="text-sm font-semibold text-foreground mb-0.5">{skill}</h4>
-                    <p className="text-xs text-muted-foreground leading-relaxed font-body">{desc}</p>
-                  </div>
-                ))}
-              </div>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+              
             </div>
 
             <div className="bg-card border border-border rounded-xl p-6 md:p-8">
@@ -91,8 +91,8 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 };
 
 export default About;
