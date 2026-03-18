@@ -23,7 +23,7 @@ const useCases = [
     title: "Student Creative Exploration",
     description: "AI as a creative collaborator — helping students brainstorm, visualize concepts, generate reference imagery, and push past creative blocks.",
     externalUrl: "https://opal.google/app/1kmx59Kca-dYSeBru_i946JuaJ5w2nkbC",
-    linkLabel: "Opal AI Creative Collaborator",
+    linkLabel: "Opal — AI Creative Collaborator",
     thumbnail: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=340&fit=crop",
   },
   {
@@ -31,7 +31,7 @@ const useCases = [
     title: "Critical Reflection & Insight",
     description: "AI-guided prompts that encourage students to analyze their decisions, evaluate outcomes, and build deeper understanding of their process.",
     externalUrl: "https://gemini.google.com/gem/1W-KIzPgIQ9V2_dY_alaWAq9icmwGt0dN?usp=sharing",
-    linkLabel: "Personalized AI Learning Assistant",
+    linkLabel: "Gems — Personalized AI Learning Assistant",
     thumbnail: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=340&fit=crop",
   },
   {
