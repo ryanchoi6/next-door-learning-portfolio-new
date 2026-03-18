@@ -205,16 +205,21 @@ export const projects: Project[] = [
   },
   {
     id: "public-art-installation",
-    title: "Voices of Our School",
-    thumbnail: "",
-    shortIntro: "A collaborative public art installation celebrating the diverse voices within the school community.",
-    overview: "Students designed and fabricated a large-scale public art installation for the school entrance. The project involved community surveys, collaborative design sessions, material experimentation, and project management. The final piece incorporated individual ceramic tiles, each designed by a student, assembled into a cohesive mosaic representing unity in diversity.",
+    title: "Illuminating Our Community",
+    thumbnail: "/ES_My Neighborhood_Student Work Sample_6.JPG",
+    shortIntro: "Students explored their neighborhood history and created interactive models with LED circuits.",
+    overview: "Students explored the history of their neighborhood, identifying places and features that resonated with them the most. Drawing inspiration from these areas, they designed and created a model highlighting their chosen location. In the process, students also learned the basics of electrical circuits, using coin cell batteries, copper tape, and LED lights to add interactive elements to their models. This hands-on project integrated local history, design thinking, and introductory engineering skills, allowing students to combine creativity with problem-solving while making their models both visually engaging and functional.",
     level: "Elementary",
-    subject: "Art",
+    subject: "Community & Urban Design",
     theme: "community",
     themeLabel: "Community & Urban Design",
-    images: [],
-    teacherNote: "Public art teaches something no worksheet can: your creative voice matters enough to be permanent, visible, and shared."
+    images: [
+      "/ES_My Neighborhood_Student Work Sample_1.JPG",
+      "/ES_My Neighborhood_Student Work Sample_13.JPG",
+      "/ES_My Neighborhood_Student Work Sample_4.JPG",
+      "/ES_My Neighborhood_Student Work Sample_5.JPG",
+      "/ES_My Neighborhood_Student Work Sample_6.JPG",
+    ],
   },
   {
     id: "smart-city-prototype",
