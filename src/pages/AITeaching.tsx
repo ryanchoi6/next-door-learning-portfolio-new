@@ -54,8 +54,8 @@ const useCases = [
     icon: <Shield size={22} />,
     title: "Responsible & Critical AI Use",
     description: "Teaching students to evaluate AI outputs critically, understand bias and limitations, and develop an ethical framework for AI as a tool.",
-    externalUrl: "https://www.commonsense.org/education/articles/classroom-guide-to-ai",
-    linkLabel: "Common Sense — AI Classroom Guide",
+    externalUrl: "https://www.commonsense.org/education/collections/ai-literacy-lessons-for-grades-6-12",
+    linkLabel: "Common Sense — AI Literacy",
     thumbnail: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=340&fit=crop",
   },
 ];
