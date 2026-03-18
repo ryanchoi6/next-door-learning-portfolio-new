@@ -107,8 +107,33 @@ export const projects: Project[] = [
     themeLabel: "Engineering & Structural",
     images: ["/Flat pack_Rocking Chair.png", "/Flat pack_Rocking Chair2.png", "/Flat pack_Rocking Chair3.png", "/Flat pack_Rocking Chair4.png", "/Flat pack_Rocking Chair5.png", "/Flat Pack Bookshelf.png", "/Flat Pack Bookshelf2.png", "/Flat Pack Bookshelf3.png", "/Flat Pack Bookshelf4.png", "/Flat Pack Bookshelf5.png", "/Flat Pack Bookshelf6.png"],
   },
+  // ── ELEMENTARY ENGINEERING & STRUCTURAL ──
+  {
+    id: "elem-eng-1",
+    title: "",
+    thumbnail: "",
+    shortIntro: "",
+    overview: "",
+    level: "Elementary",
+    subject: "Engineering & Structural",
+    theme: "engineering",
+    themeLabel: "Engineering & Structural",
+    images: [],
+  },
+  {
+    id: "elem-eng-2",
+    title: "",
+    thumbnail: "",
+    shortIntro: "",
+    overview: "",
+    level: "Elementary",
+    subject: "Engineering & Structural",
+    theme: "engineering",
+    themeLabel: "Engineering & Structural",
+    images: [],
+  },
 
-  // ── ENVIRONMENTAL & SCIENCE (2 total) ──
+  // ── ENVIRONMENTAL & SCIENCE ──
   {
     id: "solar-greenhouse",
     title: "Biodegradable Packaging as an Alternative to Plastic",
@@ -136,8 +161,21 @@ export const projects: Project[] = [
     images: ["/Student_Work_Sample_3.JPG", "/Student_Work_Sample_4-2.JPG", "/Student_Work_Sample_5.JPG"],
     teacherNote: "When students tested their first filter and saw murky water become clear, the room went silent. That moment — when science stops being abstract — is why I teach."
   },
+  // ── ELEMENTARY ENVIRONMENTAL & SCIENCE ──
+  {
+    id: "elem-env-1",
+    title: "",
+    thumbnail: "",
+    shortIntro: "",
+    overview: "",
+    level: "Elementary",
+    subject: "Environmental & Science",
+    theme: "environmental",
+    themeLabel: "Environmental & Science",
+    images: [],
+  },
 
-  // ── COMMUNITY & URBAN DESIGN (3 total) ──
+  // ── COMMUNITY & URBAN DESIGN ──
   {
     id: "neighborhood-redesign",
     title: "Physics in Motion",
