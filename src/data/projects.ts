@@ -175,15 +175,18 @@ export const projects: Project[] = [
   // ── ELEMENTARY ENVIRONMENTAL & SCIENCE ──
   {
     id: "elem-env-1",
-    title: "",
-    thumbnail: "",
-    shortIntro: "",
-    overview: "",
+    title: "Space Station Explorers",
+    thumbnail: "/ES_Space Station_Student Work Sample_12.png",
+    shortIntro: "Students explored astronaut life and designed space station concepts using Tinkercad.",
+    overview: "Students explored the daily life of astronauts and the unique challenges of living and working in space, including limited space, microgravity, and the need for sustainable food, water, and energy systems. Using Tinkercad, they designed their own space station concepts, creating functional modules for sleeping, working, and recreation.",
     level: "Elementary",
     subject: "Environmental & Science",
     theme: "environmental",
     themeLabel: "Environmental & Science",
-    images: [],
+    images: [
+      "/ES_Space Station_Student Work Sample_12.png",
+      "/ES_Space Station_Student Work Sample_15.png",
+    ],
   },
 
   // ── COMMUNITY & URBAN DESIGN ──
