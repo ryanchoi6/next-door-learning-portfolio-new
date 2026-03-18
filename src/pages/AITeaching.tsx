@@ -159,11 +159,9 @@ const AITeaching = () => {
                 </button>
 
                 {/* Thumbnail */}
-                <a
-                  href={useCases[selectedCase].externalUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block group/link"
+                <div
+                  className="block group/link cursor-pointer"
+                  onClick={() => window.open(useCases[selectedCase!].externalUrl, '_blank')}
                 >
                   <div className="relative aspect-video bg-secondary overflow-hidden">
                     <img
@@ -177,7 +175,7 @@ const AITeaching = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </div>
 
                 {/* Info */}
                 <div className="p-5">
