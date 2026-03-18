@@ -22,8 +22,8 @@ const useCases = [
     icon: <Palette size={22} />,
     title: "Student Creative Exploration",
     description: "AI as a creative collaborator — helping students brainstorm, visualize concepts, generate reference imagery, and push past creative blocks.",
-    externalUrl: "https://www.canva.com/ai-image-generator/",
-    linkLabel: "Canva AI Image Generator",
+    externalUrl: "https://opal.google/app/1kmx59Kca-dYSeBru_i946JuaJ5w2nkbC",
+    linkLabel: "Opal AI Creative Collaborator",
     thumbnail: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=340&fit=crop",
   },
   {
