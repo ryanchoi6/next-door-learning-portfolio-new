@@ -110,10 +110,10 @@ export const projects: Project[] = [
   // ── ELEMENTARY ENGINEERING & STRUCTURAL ──
   {
     id: "elem-eng-1",
-    title: "",
+    title: "Forces & Function: Popsicle Bridges",
     thumbnail: "",
-    shortIntro: "",
-    overview: "",
+    shortIntro: "Students designed and built model bridges using popsicle sticks to explore engineering and physics concepts.",
+    overview: "Students designed and built model bridges using popsicle sticks to explore fundamental engineering and physics concepts such as forces, stability, and load distribution. Through hands-on construction and testing, they experimented with different designs, evaluated performance, and refined their structures based on their results.",
     level: "Elementary",
     subject: "Engineering & Structural",
     theme: "engineering",
@@ -122,10 +122,10 @@ export const projects: Project[] = [
   },
   {
     id: "elem-eng-2",
-    title: "",
+    title: "Interactive Instrument Redesign",
     thumbnail: "",
-    shortIntro: "",
-    overview: "",
+    shortIntro: "Students redesigned instruments using cardboard and Makey Makey to add interactive functionality.",
+    overview: "Students redesigned various instruments, such as the piano, drum, and turntable, using cardboard and Makey Makey—a simple microcontroller that allows everyday objects to function as touch-sensitive inputs—to add interactive functionality. Through this process, they explored the relationship between design and technology, experimented with user interaction, and developed an understanding of circuits, inputs, and creative problem-solving.",
     level: "Elementary",
     subject: "Engineering & Structural",
     theme: "engineering",
