@@ -30,11 +30,13 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
   const closeLightbox = () => setLightboxIndex(null);
 
-  // For digital media, show a simple lightbox overlay instead of the full modal
+  const hasVideo = project?.videoUrls && project.videoUrls.length > 0;
+
+  // For digital media, show a simple lightbox overlay (image or video)
   if (isDigitalMedia) {
     return (
       <AnimatePresence>
-        {project && project.thumbnail && (
+        {project && (hasVideo || project.thumbnail) && (
           <motion.div
             className="fixed inset-0 z-[100] bg-foreground/90 backdrop-blur-md flex items-center justify-center"
             initial={{ opacity: 0 }}
@@ -49,16 +51,35 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               <X size={20} />
             </button>
 
-            <motion.img
-              src={project.images[0] || project.thumbnail}
-              alt={project.title}
-              className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
-              transition={{ duration: 0.2 }}
-              onClick={(e) => e.stopPropagation()}
-            />
+            {hasVideo ? (
+              <motion.div
+                className="w-[90vw] max-w-4xl aspect-video rounded-lg overflow-hidden"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.2 }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <iframe
+                  src={project.videoUrls![0]}
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title={project.title}
+                />
+              </motion.div>
+            ) : (
+              <motion.img
+                src={project.images[0] || project.thumbnail}
+                alt={project.title}
+                className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.2 }}
+                onClick={(e) => e.stopPropagation()}
+              />
+            )}
           </motion.div>
         )}
       </AnimatePresence>
