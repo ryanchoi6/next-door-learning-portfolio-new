@@ -33,6 +33,12 @@ const ProjectCard = ({ project, index, onClick }: ProjectCardProps) => {
         <div className={`${isDigitalMedia ? "aspect-square" : "aspect-[4/3]"} bg-secondary relative overflow-hidden`}>
           {project.thumbnail ? (
             <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover" />
+          ) : isDigitalMedia && project.videoUrls && project.videoUrls.length > 0 ? (
+            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary to-muted">
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                <Video size={24} className="text-primary/60" />
+              </div>
+            </div>
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary to-muted">
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
