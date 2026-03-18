@@ -60,13 +60,23 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                 transition={{ duration: 0.2 }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <iframe
-                  src={project.videoUrls![0]}
-                  className="w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title={project.title}
-                />
+                {project.videoUrls![0].endsWith('.mp4') ? (
+                  <video
+                    src={project.videoUrls![0]}
+                    className="w-full h-full object-contain bg-black"
+                    controls
+                    autoPlay
+                    playsInline
+                  />
+                ) : (
+                  <iframe
+                    src={project.videoUrls![0]}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title={project.title}
+                  />
+                )}
               </motion.div>
             ) : (
               <motion.img
