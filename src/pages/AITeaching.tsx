@@ -28,10 +28,10 @@ const useCases = [
   },
   {
     icon: <MessageSquare size={22} />,
-    title: "Reflective Practice & Critique",
-    description: "AI-facilitated reflection prompts that help students articulate their design decisions, evaluate their process, and develop metacognitive awareness.",
-    externalUrl: "https://chat.openai.com",
-    linkLabel: "ChatGPT — Reflection Prompts",
+    title: "Critical Reflection & Insight",
+    description: "AI-guided prompts that encourage students to analyze their decisions, evaluate outcomes, and build deeper understanding of their process.",
+    externalUrl: "https://gemini.google.com/gem/1W-KIzPgIQ9V2_dY_alaWAq9icmwGt0dN?usp=sharing",
+    linkLabel: "Personalized AI Learning Assistant",
     thumbnail: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=340&fit=crop",
   },
   {
