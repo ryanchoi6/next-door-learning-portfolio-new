@@ -190,15 +190,13 @@ const AITeaching = () => {
                   <p className="text-sm text-muted-foreground leading-relaxed font-body mb-4">
                     {useCases[selectedCase].description}
                   </p>
-                  <a
-                    href={useCases[selectedCase].externalUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => window.open(useCases[selectedCase!].externalUrl, '_blank')}
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors"
                   >
                     <ExternalLink size={14} />
                     {useCases[selectedCase].linkLabel}
-                  </a>
+                  </button>
                 </div>
               </motion.div>
             </motion.div>
