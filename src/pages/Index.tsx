@@ -24,32 +24,43 @@ const Index = () => {
     <div>
       {/* Hero */}
       <section className="container pt-20 pb-16 md:pt-32 md:pb-24">
-        <motion.div {...fadeUp} className="max-w-3xl">
-          <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground leading-[1.1] mb-6">
-            Play. Build. Create.{" "}
-            <span className="text-primary">Transform.</span>
-          </h1>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mb-8 font-body">
-            An interdisciplinary K-12 educator specializing in STEAM, Design, Engineering, and Art — 
-            designing project-based learning experiences that prepare students for a future that 
-            doesn't yet exist.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              to="/projects"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity shadow-sm"
-            >
-              Explore Projects
-              <ArrowRight size={16} />
-            </Link>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 border border-border text-foreground px-6 py-3 rounded-full text-sm font-semibold hover:bg-secondary transition-colors"
-            >
-              Get in Touch
-            </Link>
-          </div>
-        </motion.div>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <motion.div {...fadeUp} className="max-w-3xl">
+            <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground leading-[1.1] mb-6">
+              Play. Build. Create.{" "}
+              <span className="text-primary">Transform.</span>
+            </h1>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mb-8 font-body">
+              An interdisciplinary K-12 educator specializing in STEAM, Design, Engineering, and Art — 
+              designing project-based learning experiences that prepare students for a future that 
+              doesn't yet exist.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                to="/projects"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity shadow-sm"
+              >
+                Explore Projects
+                <ArrowRight size={16} />
+              </Link>
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 border border-border text-foreground px-6 py-3 rounded-full text-sm font-semibold hover:bg-secondary transition-colors"
+              >
+                Get in Touch
+              </Link>
+            </div>
+          </motion.div>
+          <motion.div {...fadeUp} className="aspect-video rounded-xl overflow-hidden shadow-card border border-border">
+            <iframe
+              src="https://player.vimeo.com/video/1174694598?autoplay=1&muted=1&controls=0&loop=0&title=0&byline=0&portrait=0"
+              className="w-full h-full"
+              allow="autoplay; fullscreen"
+              allowFullScreen
+              style={{ border: 0 }}
+            />
+          </motion.div>
+        </div>
       </section>
 
       {/* Stats */}
