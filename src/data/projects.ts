@@ -111,14 +111,19 @@ export const projects: Project[] = [
   {
     id: "elem-eng-1",
     title: "Forces & Function: Popsicle Bridges",
-    thumbnail: "",
+    thumbnail: "/ES_Building Bridge_Student Work Sample_2.JPG",
     shortIntro: "Students designed and built model bridges using popsicle sticks to explore engineering and physics concepts.",
     overview: "Students designed and built model bridges using popsicle sticks to explore fundamental engineering and physics concepts such as forces, stability, and load distribution. Through hands-on construction and testing, they experimented with different designs, evaluated performance, and refined their structures based on their results.",
     level: "Elementary",
     subject: "Engineering & Structural",
     theme: "engineering",
     themeLabel: "Engineering & Structural",
-    images: [],
+    images: [
+      "/ES_Building Bridge_Student Work Sample_2.JPG",
+      "/ES_Building Bridge_Student Work Sample_13.JPG",
+      "/ES_Building Bridge_Student Work Sample_7.JPG",
+      "/ES_Building Bridge_Student Work Sample_12.jpg",
+    ],
   },
   {
     id: "elem-eng-2",
