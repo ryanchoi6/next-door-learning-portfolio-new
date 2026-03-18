@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { GraduationCap } from "lucide-react";
+import { GraduationCap, Video } from "lucide-react";
 import type { Project } from "@/data/projects";
 
 interface ProjectCardProps {
