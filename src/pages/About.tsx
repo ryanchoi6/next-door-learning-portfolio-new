@@ -56,9 +56,6 @@ const About = () => {
                 allowFullScreen
                 style={{ border: 0 }}
               />
-            </div>
-
-
 
 
 
