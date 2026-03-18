@@ -161,14 +161,7 @@ const AITeaching = () => {
                 {/* Thumbnail */}
                 <div
                   className="block group/link cursor-pointer"
-                  onClick={() => {
-                    const opened = window.open(
-                      useCases[selectedCase!].externalUrl,
-                      "_blank",
-                      "noopener,noreferrer"
-                    );
-                    if (!opened) window.location.assign(useCases[selectedCase!].externalUrl);
-                  }}
+                  onClick={() => window.open(useCases[selectedCase!].externalUrl, '_blank')}
                 >
                   <div className="relative aspect-video bg-secondary overflow-hidden">
                     <img
@@ -198,14 +191,7 @@ const AITeaching = () => {
                     {useCases[selectedCase].description}
                   </p>
                   <button
-                    onClick={() => {
-                      const opened = window.open(
-                        useCases[selectedCase!].externalUrl,
-                        "_blank",
-                        "noopener,noreferrer"
-                      );
-                      if (!opened) window.location.assign(useCases[selectedCase!].externalUrl);
-                    }}
+                    onClick={() => window.open(useCases[selectedCase!].externalUrl, '_blank')}
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors"
                   >
                     <ExternalLink size={14} />
