@@ -53,7 +53,7 @@ const Index = () => {
           </motion.div>
           <motion.div {...fadeUp} className="aspect-video rounded-xl overflow-hidden shadow-card border border-border">
             <iframe
-              src="https://player.vimeo.com/video/1174694598?autoplay=1&muted=1&controls=0&loop=0&title=0&byline=0&portrait=0"
+              src="https://player.vimeo.com/video/1174755421?autoplay=1&muted=1&controls=0&loop=1&title=0&byline=0&portrait=0"
               className="w-full h-full"
               allow="autoplay; fullscreen"
               allowFullScreen
