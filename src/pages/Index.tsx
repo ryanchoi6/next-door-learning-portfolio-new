@@ -11,10 +11,10 @@ const fadeUp = {
 };
 
 const stats = [
-  { icon: <Compass size={20} />, value: "3", label: "Countries Taught In" },
-  { icon: <Users size={20} />, value: "3000+", label: "Followers on TikTok" },
-  { icon: <Layers size={20} />, value: "2", label: "Master's Degrees" },
   { icon: <Clock size={20} />, value: "11", label: "Years of Teaching" },
+  { icon: <Layers size={20} />, value: "2", label: "Master's Degrees" },
+  { icon: <Compass size={20} />, value: "3", label: "Countries Taught In" },
+  { icon: <Users size={20} />, value: "3,000+", label: "Followers on SNS" },
 ];
 
 const Index = () => {
