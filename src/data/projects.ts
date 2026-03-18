@@ -93,6 +93,7 @@ export const projects: Project[] = [
     theme: "engineering",
     themeLabel: "Engineering & Structural",
     images: ["/Carnival_Maze Runner4.png", "/Carnival_Maze Runner3.png", "/Carnival_Maze Runner2.png", "/Carnival_Maze Runner.jpg", "/Carnival_Pinball Machine.png", "/Carnival_Pinball Machine2.png", "/Carnival_Pinball Machine3.png", "/Carnival_Pinball Machine4.png"],
+    videoUrls: ["https://player.vimeo.com/video/1174699684", "https://player.vimeo.com/video/1174699915", "https://player.vimeo.com/video/1174699915"],
   },
   {
     id: "geodesic-dome",
