@@ -31,7 +31,7 @@ const useCases = [
     title: "Critical Reflection & Insight",
     description: "AI-guided prompts that encourage students to analyze their decisions, evaluate outcomes, and build deeper understanding of their process.",
     externalUrl: "https://gemini.google.com/gem/1W-KIzPgIQ9V2_dY_alaWAq9icmwGt0dN?usp=sharing",
-    linkLabel: "Personalized AI Learning Assistant",
+    linkLabel: "Gems — Personalized AI Learning Assistant",
     thumbnail: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=340&fit=crop",
   },
   {
