@@ -48,16 +48,14 @@ const About = () => {
           </div>
 
           <div className="space-y-8">
-            <div>
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">The Skills That Matter</h3>
-              
-
-
-
-
-
-
-
+            <div className="aspect-video rounded-xl overflow-hidden border border-border shadow-card">
+              <iframe
+                src="https://player.vimeo.com/video/1174768172?autoplay=1&muted=1&controls=0&loop=1&title=0&byline=0&portrait=0"
+                className="w-full h-full"
+                allow="autoplay; fullscreen"
+                allowFullScreen
+                style={{ border: 0 }}
+              />
 
 
 
