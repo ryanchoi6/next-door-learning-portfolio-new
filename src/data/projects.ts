@@ -128,14 +128,20 @@ export const projects: Project[] = [
   {
     id: "elem-eng-2",
     title: "Interactive Instrument Redesign",
-    thumbnail: "",
+    thumbnail: "/ES_Instrument_Student Work Sample_5.JPG",
     shortIntro: "Students redesigned instruments using cardboard and Makey Makey to add interactive functionality.",
     overview: "Students redesigned various instruments, such as the piano, drum, and turntable, using cardboard and Makey Makey—a simple microcontroller that allows everyday objects to function as touch-sensitive inputs—to add interactive functionality. Through this process, they explored the relationship between design and technology, experimented with user interaction, and developed an understanding of circuits, inputs, and creative problem-solving.",
     level: "Elementary",
     subject: "Engineering & Structural",
     theme: "engineering",
     themeLabel: "Engineering & Structural",
-    images: [],
+    images: [
+      "/ES_Instrument_Student Work Sample_4.jpg",
+      "/ES_Instrument_Student Work Sample_5.JPG",
+    ],
+    videoUrls: [
+      "https://player.vimeo.com/video/1174745329",
+    ],
   },
 
   // ── ENVIRONMENTAL & SCIENCE ──
