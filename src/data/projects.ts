@@ -161,8 +161,21 @@ export const projects: Project[] = [
     images: ["/Student_Work_Sample_3.JPG", "/Student_Work_Sample_4-2.JPG", "/Student_Work_Sample_5.JPG"],
     teacherNote: "When students tested their first filter and saw murky water become clear, the room went silent. That moment — when science stops being abstract — is why I teach."
   },
+  // ── ELEMENTARY ENVIRONMENTAL & SCIENCE ──
+  {
+    id: "elem-env-1",
+    title: "",
+    thumbnail: "",
+    shortIntro: "",
+    overview: "",
+    level: "Elementary",
+    subject: "Environmental & Science",
+    theme: "environmental",
+    themeLabel: "Environmental & Science",
+    images: [],
+  },
 
-  // ── COMMUNITY & URBAN DESIGN (3 total) ──
+  // ── COMMUNITY & URBAN DESIGN ──
   {
     id: "neighborhood-redesign",
     title: "Physics in Motion",
