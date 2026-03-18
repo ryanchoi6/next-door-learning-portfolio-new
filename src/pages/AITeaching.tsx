@@ -14,9 +14,9 @@ const useCases = [
     icon: <Brain size={22} />,
     title: "Curriculum Design & Planning",
     description: "Using AI to accelerate lesson planning, differentiate instruction, and create adaptive learning pathways that respond to student needs in real time.",
-    externalUrl: "https://www.magicschool.ai",
-    linkLabel: "MagicSchool AI — Lesson Planning",
-    thumbnail: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=340&fit=crop",
+    externalUrl: "https://notebooklm.google.com/notebook/bf03968e-aff7-46a9-bca8-3b797c4df141",
+    linkLabel: "NotebookLM AI — Lesson Planning",
+    thumbnail: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=600&h=340&fit=crop",
   },
   {
     icon: <Palette size={22} />,
