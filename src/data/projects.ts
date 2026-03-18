@@ -85,7 +85,7 @@ export const projects: Project[] = [
   {
     id: "paper-roller-coaster",
     title: "Designing Play: Carnival Game Project",
-    thumbnail: "/Speaker_Student_Work_Sample_12.JPG",
+    thumbnail: "/Carnival Video 1 still cut.jpg",
     shortIntro: "Students applied design thinking to create carnival games, learning game design, ergonomics, and woodworking. ",
     overview: "Elementary students designed multi-element roller coasters using cardstock and tape. They explored concepts of gravitational potential energy, momentum, and friction as they engineered loops, hills, and turns that kept a marble on track from start to finish.",
     level: "High School",
