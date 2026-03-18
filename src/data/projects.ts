@@ -334,7 +334,7 @@ export const projects: Project[] = [
   {
     id: "ms-dm-video-1",
     title: "Student Work",
-    thumbnail: "",
+    thumbnail: "https://vumbnail.com/1174674920.jpg",
     shortIntro: "",
     overview: "",
     level: "Middle School",
@@ -363,7 +363,7 @@ export const projects: Project[] = [
   { id: "hs-dm-12", title: "Student Work", thumbnail: "/HS Art & Media_Student_Work_Sample_6.jpg", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/HS Art & Media_Student_Work_Sample_6.jpg"] },
   { id: "hs-dm-13", title: "Student Work", thumbnail: "/HS Art & Media_Student_Work_Sample_7.jpg", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/HS Art & Media_Student_Work_Sample_7.jpg"] },
   { id: "hs-dm-14", title: "Student Work", thumbnail: "/HS Art & Media_Student_Work_Sample_9.jpg", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: ["/HS Art & Media_Student_Work_Sample_9.jpg"] },
-  { id: "hs-dm-video-1", title: "Student Work", thumbnail: "", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [], videoUrls: ["https://player.vimeo.com/video/1174679045"] },
+  { id: "hs-dm-video-1", title: "Student Work", thumbnail: "https://vumbnail.com/1174679045.jpg", shortIntro: "", overview: "", level: "High School", subject: "Art", theme: "digital-media", themeLabel: "Art & Digital Media", images: [], videoUrls: ["https://player.vimeo.com/video/1174679045"] },
 ];
 
 export const themes = [
