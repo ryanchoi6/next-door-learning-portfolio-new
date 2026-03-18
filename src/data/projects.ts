@@ -334,7 +334,7 @@ export const projects: Project[] = [
   {
     id: "ms-dm-video-1",
     title: "Student Work",
-    thumbnail: "",
+    thumbnail: "https://vumbnail.com/1174674920.jpg",
     shortIntro: "",
     overview: "",
     level: "Middle School",
