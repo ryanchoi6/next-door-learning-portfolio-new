@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, Brain, Palette, MessageSquare, Lightbulb, Shield, ExternalLink, X } from "lucide-react";
+import aiToolsSteamImg from "@/assets/ai-tools-steam.png";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
