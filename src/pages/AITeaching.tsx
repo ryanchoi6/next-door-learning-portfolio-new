@@ -96,6 +96,64 @@ const AITeaching = () => {
         </motion.div>
       </section>
 
+      {/* AI Tools for STEAM Projects */}
+      <section className="container pb-12">
+        <motion.div {...fadeUp} className="max-w-4xl">
+          <h2 className="font-display text-2xl font-bold text-foreground mb-3">AI Tools for STEAM Projects</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed font-body mb-6 max-w-3xl">
+            I am proficient in a range of AI tools that can be integrated into the student learning process. 
+            These are just a few examples of how I aim to use AI to help students move from ideas to real-world 
+            solutions while building creativity and problem-solving skills.
+          </p>
+          <div className="rounded-xl overflow-hidden border border-border bg-card shadow-sm">
+            <img
+              src={aiToolsSteamImg}
+              alt="AI Tools for STEAM Projects — From Ideas to Prototypes, showing an iterative learning process with tools like Gemini, Mixboard, Midjourney, Opal, Lovable, and more"
+              className="w-full h-auto"
+            />
+          </div>
+        </motion.div>
+      </section>
+
+      {/* AI Tool Combinations */}
+      <section className="container pb-12 md:pb-16">
+        <motion.div {...fadeUp} className="max-w-3xl">
+          <h2 className="font-display text-xl font-semibold text-foreground mb-5">AI Tool Combinations for Learning</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              {
+                label: "Ex. 1",
+                tools: "Mixboard + Nano Banana + Midjourney",
+                outcome: "Students turn ideas into visual concepts.",
+              },
+              {
+                label: "Ex. 2",
+                tools: "Figma + Lovable + Opal",
+                outcome: "Students design and build real apps or digital solutions.",
+              },
+              {
+                label: "Ex. 3",
+                tools: "Kling + Suno + Canva AI",
+                outcome: "Students communicate their solutions creatively.",
+              },
+            ].map((combo) => (
+              <motion.div
+                key={combo.label}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="bg-card border border-border rounded-xl p-5"
+              >
+                <span className="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary">{combo.label}</span>
+                <p className="font-display text-sm font-semibold text-foreground mt-1.5 mb-1.5">{combo.tools}</p>
+                <p className="text-xs text-muted-foreground leading-relaxed font-body">{combo.outcome}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </section>
+
       {/* Use Cases Grid */}
       <section className="container pb-16 md:pb-24">
         <motion.div {...fadeUp}>
