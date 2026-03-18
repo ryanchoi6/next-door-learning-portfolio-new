@@ -159,9 +159,11 @@ const AITeaching = () => {
                 </button>
 
                 {/* Thumbnail */}
-                <div
-                  className="block group/link cursor-pointer"
-                  onClick={() => window.open(useCases[selectedCase!].externalUrl, '_blank')}
+                <a
+                  href={useCases[selectedCase].externalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block group/link"
                 >
                   <div className="relative aspect-video bg-secondary overflow-hidden">
                     <img
@@ -175,7 +177,7 @@ const AITeaching = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
 
                 {/* Info */}
                 <div className="p-5">
@@ -190,13 +192,15 @@ const AITeaching = () => {
                   <p className="text-sm text-muted-foreground leading-relaxed font-body mb-4">
                     {useCases[selectedCase].description}
                   </p>
-                  <button
-                    onClick={() => window.open(useCases[selectedCase!].externalUrl, '_blank')}
+                  <a
+                    href={useCases[selectedCase].externalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors"
                   >
                     <ExternalLink size={14} />
                     {useCases[selectedCase].linkLabel}
-                  </button>
+                  </a>
                 </div>
               </motion.div>
             </motion.div>
