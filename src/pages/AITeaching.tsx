@@ -38,8 +38,8 @@ const useCases = [
     icon: <Lightbulb size={22} />,
     title: "Design Thinking Acceleration",
     description: "Using AI to rapidly prototype ideas, test assumptions, and generate multiple solution paths — iteration is faster with a thinking partner.",
-    externalUrl: "https://www.figma.com/ai",
-    linkLabel: "Figma AI — Rapid Prototyping",
+    externalUrl: "https://www.youtube.com/watch?v=6mTWfthVXJs",
+    linkLabel: "Mixboard — Rapid Prototyping",
     thumbnail: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&h=340&fit=crop",
   },
   {
