@@ -57,6 +57,7 @@ const Index = () => {
               className="w-full h-full"
               allow="autoplay; fullscreen"
               allowFullScreen
+              title="Profile Video"
               style={{ border: 0 }}
             />
           </motion.div>
@@ -101,8 +102,12 @@ const Index = () => {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="group bg-card border border-border rounded-xl overflow-hidden hover:shadow-card-hover transition-all duration-300"
                 >
-                  <div className="aspect-[4/3] bg-secondary flex items-center justify-center">
-                    <span className="font-display text-3xl font-bold text-primary/20">{project.title[0]}</span>
+                  <div className="aspect-[4/3] bg-secondary flex items-center justify-center overflow-hidden">
+                    {project.thumbnail ? (
+                      <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover" />
+                    ) : (
+                      <span className="font-display text-3xl font-bold text-primary/20">{project.title[0]}</span>
+                    )}
                   </div>
                   <div className="p-4">
                     <h3 className="font-display text-base font-semibold text-foreground mb-1">{project.title}</h3>

@@ -527,21 +527,9 @@ export const projects: Project[] = [
 
    // ── HIGH SCHOOL DIGITAL MEDIA STUDENT WORK (14 total) ──
    {
-     id: "hs-dm-1",
-     title: "Student Work",
-     thumbnail: "/HS-Art-&-Media_Student_Work_Sample_11-2.JPG",
-     shortIntro: "Student artwork from High School level.",
-     overview: "Student artwork from High School level.",
-     level: "High School",
-     subject: "Art",
-     theme: "digital-media",
-     themeLabel: "Art & Digital Media",
-     images: ["/HS-Art-&-Media_Student_Work_Sample_11-2.JPG"],
-   },
-   {
-     id: "hs-dm-2",
-     title: "Student Work",
-     thumbnail: "/HS-Art-&-Media_Student_Work_Sample_11-2.JPG",
+      id: "hs-dm-2",
+      title: "Student Work",
+      thumbnail: "/HS-Art-&-Media_Student_Work_Sample_11-2.JPG",
      shortIntro: "Student artwork from High School level.",
      overview: "Student artwork from High School level.",
      level: "High School",
