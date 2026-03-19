@@ -93,7 +93,7 @@ export const projects: Project[] = [
     theme: "engineering",
     themeLabel: "Engineering & Structural",
     images: ["/optimized/Carnival-Video-1-still-cut.jpg", "/optimized/Carnival_Maze-Runner4.jpg", "/optimized/Carnival_Maze-Runner3.jpg", "/optimized/Carnival_Maze-Runner2.jpg", "/optimized/Carnival_Maze-Runner.jpg", "/optimized/Carnival_Pinball-Machine.jpg", "/optimized/Carnival_Pinball-Machine2.jpg", "/optimized/Carnival_Pinball-Machine3.jpg", "/optimized/Carnival_Pinball-Machine4.jpg"],
-    videoUrls: ["/Carnival-Video1.MOV", "/Carnival-Video2_Pinball_Testing.MOV", "/Carnival-Video3_Maze-Runner_Testing.MOV"],
+    videoUrls: ["/optimized/Carnival-Video1.mp4", "/optimized/Carnival-Video2_Pinball_Testing.mp4", "/optimized/Carnival-Video3_Maze-Runner_Testing.mp4"],
   },
   {
     id: "geodesic-dome",
@@ -178,7 +178,7 @@ export const projects: Project[] = [
      theme: "digital-media",
      themeLabel: "Art & Digital Media",
       images: ["/optimized/MS-Art-&-Media_Student_Work_Sample_2.jpg"],
-      videoUrls: ["/MS-Art-&-Media_Stop-Motion.mp4"],
+      videoUrls: ["/optimized/MS-Art-&-Media_Stop-Motion.mp4"],
       teacherNote: "Stop-motion taught patience in a way no lecture could. Students learned that quality requires hundreds of small, intentional decisions."
     },
    {
@@ -329,7 +329,7 @@ export const projects: Project[] = [
      theme: "engineering",
      themeLabel: "Engineering & Structural",
       images: ["/optimized/ES_Instrument_Student-Work-Sample_4.jpg", "/optimized/ES_Instrument_Student-Work-Sample_5.jpg"],
-      videoUrls: ["/ES_Instrument_Student-Work-Sample_10.MOV"],
+      videoUrls: ["/optimized/ES_Instrument_Student-Work-Sample_10.mp4"],
     },
 
    // ── ELEMENTARY ENVIRONMENTAL (1 total) ──
@@ -552,7 +552,7 @@ export const projects: Project[] = [
       theme: "digital-media",
       themeLabel: "Art & Digital Media",
       images: ["/optimized/HS-Art-&-Media_Student_Work_Sample_11-2.jpg"],
-      videoUrls: ["/HS-Art-&-Media.mp4"],
+      videoUrls: ["/optimized/HS-Art-&-Media.mp4"],
     },
    {
      id: "hs-dm-3",

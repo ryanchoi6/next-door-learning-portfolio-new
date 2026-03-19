@@ -60,13 +60,17 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                 transition={{ duration: 0.2 }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <iframe
-                  src={project.videoUrls![0]}
-                  className="w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title={project.title}
-                />
+                {project.videoUrls![0].includes("vimeo") || project.videoUrls![0].includes("youtube") ? (
+                  <iframe
+                    src={project.videoUrls![0]}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title={project.title}
+                  />
+                ) : (
+                  <video src={project.videoUrls![0]} className="w-full h-full" controls playsInline />
+                )}
               </motion.div>
             ) : (
               <motion.img
@@ -218,14 +222,18 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                         className="flex flex-col gap-4"
                       >
                         {project.videoUrls.map((url, i) => (
-                          <div key={i} className="aspect-video rounded-xl overflow-hidden bg-secondary">
-                            <iframe
-                              src={url}
-                              className="w-full h-full"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowFullScreen
-                              title={`${project.title} video ${i + 1}`}
-                            />
+                          <div key={url} className="aspect-video rounded-xl overflow-hidden bg-secondary">
+                            {url.includes("vimeo") || url.includes("youtube") ? (
+                              <iframe
+                                src={url}
+                                className="w-full h-full"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                title={`${project.title} video ${i + 1}`}
+                              />
+                            ) : (
+                              <video src={url} className="w-full h-full" controls playsInline />
+                            )}
                           </div>
                         ))}
                       </motion.div>
