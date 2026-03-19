@@ -1,0 +1,17 @@
+# Original images - keep in git, exclude from deploy
+public/*.jpg
+public/*.JPG
+public/*.jpeg
+public/*.png
+public/*.PNG
+public/*.HEIC
+public/*.pdf
+public/*.MOV
+public/*.mp4
+
+# Keep optimized and thumbs
+!public/thumbs/
+!public/optimized/
+!public/favicon.ico
+!public/placeholder.svg
+!public/robots.txt
