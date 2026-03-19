@@ -85,14 +85,15 @@ export const projects: Project[] = [
   {
     id: "paper-roller-coaster",
     title: "Designing Play: Carnival Game Project",
-    thumbnail: "/thumbs/Carnival_Pinball-Machine.jpg",
+    thumbnail: "/thumbs/Carnival-Video-1-still-cut.jpg",
     shortIntro: "Students applied design thinking to create carnival games, learning game design, ergonomics, and woodworking. ",
     overview: "Elementary students designed multi-element roller coasters using cardstock and tape. They explored concepts of gravitational potential energy, momentum, and friction as they engineered loops, hills, and turns that kept a marble on track from start to finish.",
     level: "High School",
     subject: "Engineering & Structural",
     theme: "engineering",
     themeLabel: "Engineering & Structural",
-    images: ["/optimized/Carnival_Maze-Runner4.jpg", "/optimized/Carnival_Maze-Runner3.jpg", "/optimized/Carnival_Maze-Runner2.jpg", "/optimized/Carnival_Maze-Runner.jpg", "/optimized/Carnival_Pinball-Machine.jpg", "/optimized/Carnival_Pinball-Machine2.jpg", "/optimized/Carnival_Pinball-Machine3.jpg", "/optimized/Carnival_Pinball-Machine4.jpg"],
+    images: ["/optimized/Carnival-Video-1-still-cut.jpg", "/optimized/Carnival_Maze-Runner4.jpg", "/optimized/Carnival_Maze-Runner3.jpg", "/optimized/Carnival_Maze-Runner2.jpg", "/optimized/Carnival_Maze-Runner.jpg", "/optimized/Carnival_Pinball-Machine.jpg", "/optimized/Carnival_Pinball-Machine2.jpg", "/optimized/Carnival_Pinball-Machine3.jpg", "/optimized/Carnival_Pinball-Machine4.jpg"],
+    videoUrls: ["/Carnival-Video1.MOV", "/Carnival-Video2_Pinball_Testing.MOV", "/Carnival-Video3_Maze-Runner_Testing.MOV"],
   },
   {
     id: "geodesic-dome",
@@ -176,9 +177,10 @@ export const projects: Project[] = [
      subject: "Interdisciplinary",
      theme: "digital-media",
      themeLabel: "Art & Digital Media",
-     images: ["/optimized/MS-Art-&-Media_Student_Work_Sample_2.jpg"],
-     teacherNote: "Stop-motion taught patience in a way no lecture could. Students learned that quality requires hundreds of small, intentional decisions."
-   },
+      images: ["/optimized/MS-Art-&-Media_Student_Work_Sample_2.jpg"],
+      videoUrls: ["/MS-Art-&-Media_Stop-Motion.mp4"],
+      teacherNote: "Stop-motion taught patience in a way no lecture could. Students learned that quality requires hundreds of small, intentional decisions."
+    },
    {
      id: "collage-creatures",
      title: "Collage Creatures",
@@ -326,8 +328,9 @@ export const projects: Project[] = [
      subject: "Engineering & Structural",
      theme: "engineering",
      themeLabel: "Engineering & Structural",
-     images: ["/optimized/ES_Instrument_Student-Work-Sample_4.jpg", "/optimized/ES_Instrument_Student-Work-Sample_5.jpg"],
-   },
+      images: ["/optimized/ES_Instrument_Student-Work-Sample_4.jpg", "/optimized/ES_Instrument_Student-Work-Sample_5.jpg"],
+      videoUrls: ["/ES_Instrument_Student-Work-Sample_10.MOV"],
+    },
 
    // ── ELEMENTARY ENVIRONMENTAL (1 total) ──
    {
@@ -522,22 +525,35 @@ export const projects: Project[] = [
      subject: "Art",
      theme: "digital-media",
      themeLabel: "Art & Digital Media",
-     images: ["/optimized/ES-3_9.jpg"],
-   },
-
-   // ── HIGH SCHOOL DIGITAL MEDIA STUDENT WORK (14 total) ──
-   {
-      id: "hs-dm-2",
+      images: ["/optimized/ES-3_9.jpg"],
+    },
+    {
+      id: "elem-dm-16",
       title: "Student Work",
-      thumbnail: "/thumbs/HS-Art-&-Media_Student_Work_Sample_11-2.jpg",
-     shortIntro: "Student artwork from High School level.",
-     overview: "Student artwork from High School level.",
-     level: "High School",
-     subject: "Art",
-     theme: "digital-media",
-     themeLabel: "Art & Digital Media",
-     images: ["/optimized/HS-Art-&-Media_Student_Work_Sample_11-2.jpg"],
-   },
+      thumbnail: "/thumbs/ES-3_12.jpg",
+      shortIntro: "Student artwork from Elementary level.",
+      overview: "Student artwork from Elementary level.",
+      level: "Elementary",
+      subject: "Art",
+      theme: "digital-media",
+      themeLabel: "Art & Digital Media",
+      images: ["/optimized/ES-3_12.jpg"],
+    },
+
+    // ── HIGH SCHOOL DIGITAL MEDIA STUDENT WORK (14 total) ──
+   {
+       id: "hs-dm-2",
+       title: "Student Work",
+       thumbnail: "/thumbs/HS-Art-&-Media_Student_Work_Sample_11-2.jpg",
+      shortIntro: "Student artwork from High School level.",
+      overview: "Student artwork from High School level.",
+      level: "High School",
+      subject: "Art",
+      theme: "digital-media",
+      themeLabel: "Art & Digital Media",
+      images: ["/optimized/HS-Art-&-Media_Student_Work_Sample_11-2.jpg"],
+      videoUrls: ["/HS-Art-&-Media.mp4"],
+    },
    {
      id: "hs-dm-3",
      title: "Student Work",
