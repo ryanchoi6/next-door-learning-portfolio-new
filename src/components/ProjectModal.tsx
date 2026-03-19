@@ -122,8 +122,8 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
                 {/* Hero Image */}
                 <div className="aspect-[16/9] bg-secondary overflow-hidden">
-                  {project.thumbnail ? (
-                    <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover" />
+                  {(project.images[0] || project.thumbnail) ? (
+                    <img src={project.images[0] || project.thumbnail} alt={project.title} className="w-full h-full object-cover" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary to-muted">
                       <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">

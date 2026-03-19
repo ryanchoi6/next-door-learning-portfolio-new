@@ -97,7 +97,7 @@ export const projects: Project[] = [
   {
     id: "geodesic-dome",
     title: "Tiny House Furniture Design",
-    thumbnail: "/thumbs/Carnival_Pinball-Machine.jpg",
+    thumbnail: "/thumbs/Flat-pack_Rocking-Chair.jpg",
     shortIntro: "Students designed flat-pack furniture for a tiny house to develop essential construction skills.",
     overview: "Middle school students studied Buckminster Fuller's geodesic principles and constructed scaled dome models using dowels and connectors. Teams analyzed how triangular geometry distributes loads evenly, comparing dome performance against traditional rectangular frames under compression testing.",
     level: "High School",
